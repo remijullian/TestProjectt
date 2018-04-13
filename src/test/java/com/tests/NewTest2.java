@@ -21,8 +21,8 @@ public class NewTest2 {
 		driver.get("http://newtours.demoaut.com/");
 		driver.manage().window().maximize();
 		
-		driver.findElement(By.name("userName")).sendKeys("selenium");
-		driver.findElement(By.name("password")).sendKeys("selenium");
+		driver.findElement(By.name("userName")).sendKeys("remi");
+		driver.findElement(By.name("password")).sendKeys("remi");
 		driver.findElement(By.name("login")).click();
 		String title=driver.getTitle();
 		Assert.assertEquals(title, "Find a Flight: Mercury Tours:");
